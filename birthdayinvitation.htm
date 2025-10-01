@@ -1,169 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Rei's 17th — A Chill Birthday</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Segoe UI Emoji,Arial;margin:0;background:#0f172a;color:#e6eef8}
-    header{background:linear-gradient(135deg,#0ea5a4,#7c3aed);padding:28px 20px;text-align:center;border-bottom:4px solid rgba(255,255,255,0.06)}
-    h1{margin:0;font-size:1.8rem}
-    .container{max-width:980px;margin:28px auto;padding:18px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.6)}
-    .grid{display:grid;grid-template-columns:1fr 340px;gap:18px}
-    img{width:100%;height:200px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,0.05)}
-    .card{padding:12px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
-    label{display:block;font-size:0.9rem;margin-top:8px}
-    input,textarea,select{width:100%;padding:8px;margin-top:6px;border-radius:6px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:inherit}
-    button{margin-top:10px;padding:10px 12px;border-radius:8px;border:none;background:#06b6d4;color:#022;cursor:pointer;font-weight:600}
-    small{color:#bcd}
-    .venue-list li{margin:8px 0}
-    .contacts p{margin:6px 0}
-    footer{margin-top:18px;text-align:center;color:#99a}
-    .map-wrap iframe{width:100%;height:220px;border:0;border-radius:8px}
-    .note{font-size:0.87rem;color:#bcd;margin-top:8px}
-    .rsvp-list{max-height:140px;overflow:auto;padding:8px;background:rgba(0,0,0,0.15);border-radius:6px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei's 17th Birthday Bash!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7fa;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            padding: 32px;
+        }
+        h1 {
+            color: #e67e22;
+            text-align: center;
+        }
+        .event-img {
+            display: block;
+            margin: 0 auto 24px auto;
+            max-width: 220px;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .details, .bring, .contact {
+            margin-bottom: 24px;
+        }
+        .details strong {
+            display: inline-block;
+            width: 80px;
+        }
+        .bring ul {
+            margin: 8px 0 0 24px;
+        }
+        .rsvp {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .map {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .contact ul {
+            margin: 8px 0 0 24px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Seventeen & Chill — Rei's Birthday Bash</h1>
-    <p style="opacity:.9;margin-top:6px">Come hang, eat, and meme for my 17th ✨</p>
-  </header>
-
-  <main class="container">
-    <div class="grid">
-      <div>
-        <div class="card">
-          <!-- Image placeholder — replace src with your image file -->
-          <img src="placeholder-bday.jpg" alt="Birthday banner (replace me)">
-          <p class="note">Tip: replace the image src above with a file like <code>rei-bday.jpg</code> or an online URL.</p>
+    <div class="container">
+        <h1>Rei's 17th Birthday Bash!</h1>
+        <img class="event-img" src="your-photo.jpg" alt="Birthday celebrant photo">
+        <div class="details">
+            <p><strong>Date:</strong> July 10, 2026</p>
+            <p><strong>Place:</strong> The Alley at Karrivin Plaza, Makati</p>
+            <p><strong>Time:</strong> 5:00 PM onwards</p>
         </div>
-
-        <section class="card" style="margin-top:12px">
-          <h3>Event Details</h3>
-          <p><strong>When:</strong> <time datetime="2026-10-07">October 7, 2026</time> — 4:00 PM til late</p>
-          <p><strong>Suggested Venue (realistic options in the PH):</strong></p>
-          <ul class="venue-list">
-            <li><strong>Blue Leaf Events Pavilion (Taguig)</strong> — indoor/outdoor halls, good for medium-large groups. (Nice if you're inviting relatives & friends.)</li>
-            <li><strong>Glass Garden Events (Pasig)</strong> — modern glass-house vibes, good for photos and chill hangs.</li>
-            <li><strong>Timezone / arcade / indoor activity center</strong> — if you want something casual & playful (great for teen groups).</li>
-          </ul>
-          <p class="note">I hunted a few options that work well for birthdays in Metro Manila — check the bottom for sources. Pick one that fits your budget & guest count.</p>
-        </section>
-
-        <section class="card" style="margin-top:12px">
-          <h3>What to bring</h3>
-          <ul>
-            <li>Just yourself + good vibes (mandatory) 😎</li>
-            <li>If outdoor: light jacket / umbrella (just in case)</li>
-            <li>Gifts are optional — your presence > presents</li>
-            <li>If you want: a small potluck item (snack/dessert) — only if you RSVP "bringing" and message it</li>
-          </ul>
-          <p class="note">If we go to a booked venue, food will likely be catered — I'll confirm once I book.</p>
-        </section>
-
-        <section class="card" style="margin-top:12px">
-          <h3>Map (example)</h3>
-          <div class="map-wrap">
-            <!-- Example embed searching Blue Leaf address. Replace query if you pick another venue. -->
-            <iframe
-              src="https://www.google.com/maps?q=100+Park+Avenue+McKinley+Hill+Taguig&output=embed"
-              allowfullscreen loading="lazy"></iframe>
-          </div>
-          <p class="note">Yes, maps can use addresses or coordinates. If you want precise pin: use coordinates (lat,lng). Replace the iframe src with your venue's Google Maps embed link for better results.</p>
-        </section>
-      </div>
-
-      <aside>
-        <div class="card">
-          <h3>RSVP — Quick</h3>
-          <form id="rsvpForm">
-            <label>Name<input type="text" id="name" required placeholder="Your full name"></label>
-            <label>Email<input type="email" id="email" required placeholder="you@example.com"></label>
-            <label>Attending?
-              <select id="attend">
-                <option value="Yes">Yes — I'll come</option>
-                <option value="No">No — sorry</option>
-                <option value="Maybe">Maybe</option>
-              </select>
-            </label>
-            <label>Guests (including you)
-              <input type="number" id="guests" min="1" max="10" value="1">
-            </label>
-            <label>Bringing (optional)
-              <input type="text" id="bringing" placeholder="e.g. cake slice, chips, nothing">
-            </label>
-            <label>Message
-              <textarea id="message" rows="3" placeholder="Any notes — dietary needs, etc."></textarea>
-            </label>
-
-            <button type="submit">Send RSVP (creates an email & saves locally)</button>
-            <button type="button" id="downloadCsv" style="background:#a78bfa">Download RSVPs (.csv)</button>
-          </form>
-
-          <p class="note">How this works: pressing "Send RSVP" opens your email app (pre-fills message). It also stores the RSVP in your browser (localStorage) so you can download later. No server required.</p>
+        <div class="bring">
+            <strong>What to Bring:</strong>
+            <ul>
+                <li>Your best party mood</li>
+                <li>A gift (optional!)</li>
+                <li>Appetite for food & fun</li>
+                <li>Party hat or outfit</li>
+            </ul>
         </div>
-
-        <div class="card" style="margin-top:12px">
-          <h3>Contact</h3>
-          <div class="contacts">
-            <p><strong>Rei (Host):</strong> Rei Usagi — <a href="tel:+639001234567">+63 900 123 4567</a></p>
-            <p><strong>Mom:</strong> +63 912 345 6789</p>
-            <p><strong>Email for RSVP if you prefer manual:</strong> <a href="mailto:rei.hosting@example.com">rei.hosting@example.com</a></p>
-          </div>
-          <p class="note">Replace numbers & email above with your real contact details.</p>
+        <div class="rsvp">
+            <strong>RSVP:</strong>
+            <a href="mailto:rei.birthday@gmail.com?subject=RSVP%20for%20Rei's%20Birthday">Click here to RSVP via Email</a>
         </div>
-
-        <div class="card" style="margin-top:12px">
-          <h3>RSVPs collected</h3>
-          <div id="rsvpList" class="rsvp-list">No RSVPs yet.</div>
+        <div class="map">
+            <strong>Location Map:</strong><br>
+            <iframe src="https://www.google.com/maps?q=The+Alley+at+Karrivin+Plaza,+Makati&output=embed" width="100%" height="220" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-      </aside>
+        <div class="contact">
+            <strong>Contact Person:</strong>
+            <ul>
+                <li>Rei (You): 0917-123-4567</li>
+                <li>Mom: 0917-234-5678</li>
+                <li>Dad: 0917-345-6789</li>
+            </ul>
+        </div>
     </div>
-
-    <footer>
-      <small>Made with chaotic love by Khaos — tweak anything. Venue suggestions from popular PH event lists.</small>
-    </footer>
-  </main>
-
-  <script>
-    // Simple RSVP behavior: builds a mailto for the user, stores entries in localStorage,
-    // and allows CSV download. Works without a server (good for development/testing).
-    const form = document.getElementById('rsvpForm');
-    const listDiv = document.getElementById('rsvpList');
-    const STORAGE_KEY = 'rei_bday_rsvps';
-
-    function loadRSVPs(){
-      const raw = localStorage.getItem(STORAGE_KEY);
-      return raw ? JSON.parse(raw) : [];
-    }
-    function saveRSVPs(arr){ localStorage.setItem(STORAGE_KEY, JSON.stringify(arr)); }
-    function renderList(){
-      const arr = loadRSVPs();
-      if(!arr.length){ listDiv.innerHTML = 'No RSVPs yet.'; return; }
-      listDiv.innerHTML = arr.map(r => 
-        `<div style="padding:6px;border-bottom:1px dashed rgba(255,255,255,0.04)">
-          <strong>${r.name}</strong> — ${r.email} • ${r.attend} • guests: ${r.guests}<br>
-          <small>${r.bringing||'bringing: none'} • "${r.message||''}"</small>
-         </div>`).join('');
-    }
-
-    function makeMailto({name,email,attend,guests,bringing,message}){
-      const to = encodeURIComponent('rei.hosting@example.com'); // change to your real RSVP email
-      const subject = encodeURIComponent(`RSVP: ${name} — Rei's 17th`);
-      const bodyLines = [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Attending: ${attend}`,
-        `Guests: ${guests}`,
-        `Bringing: ${bringing || 'None'}`,
-        `Message: ${message || ''}`,
-        '',
-        'Sent from Rei\'s RSVP page'
-      ];
-      const body = encodeURIComponent(bodyLines.join('\n'));
-      return `mailto:${to}?subject=${subject}&body=${body}`;
-    }
-
-    form.addEventL
-
+</body>
+</html>
