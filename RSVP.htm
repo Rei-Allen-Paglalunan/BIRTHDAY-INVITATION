@@ -68,8 +68,19 @@
 	<main class="container">
 		<div class="rsvp-mailto">
 			<h2>Send your RSVP</h2>
-			<a href="mailto:rei.birthday@gmail.com?subject=RSVP%20for%20Rei's%20Birthday">Click here to RSVP via Email</a>
-			<p style="margin-top:18px;color:#7c3aed;">Thank you for letting us know you'll be joining!</p>
+			<form action="mailto:reipaglalunan@gmail.com?subject=RSVP%20for%20Rei's%20Birthday" method="POST" enctype="text/plain" style="max-width:400px;margin:0 auto;text-align:left;">
+				<label for="name" style="color:#7c3aed;font-weight:bold;">Name:</label><br>
+				<input type="text" id="name" name="Name" required style="width:100%;padding:8px;margin-bottom:12px;border-radius:8px;border:1px solid #a18cd1;">
+
+				<label for="guests" style="color:#7c3aed;font-weight:bold;">Number of Guests:</label><br>
+				<input type="number" id="guests" name="Number of Guests" min="1" required style="width:100%;padding:8px;margin-bottom:12px;border-radius:8px;border:1px solid #a18cd1;">
+
+				<label for="message" style="color:#7c3aed;font-weight:bold;">Message:</label><br>
+				<textarea id="message" name="Message" rows="3" style="width:100%;padding:8px;margin-bottom:18px;border-radius:8px;border:1px solid #a18cd1;"></textarea>
+
+				<button type="submit" style="display:block;width:100%;background:linear-gradient(90deg,#a18cd1 0%,#fbc2eb 100%);color:#fff;font-weight:bold;padding:10px 0;border-radius:24px;border:none;box-shadow:0 2px 8px #a18cd188;transition:background 0.2s,color 0.2s;cursor:pointer;">Submit RSVP</button>
+			</form>
+			<p style="margin-top:18px;color:#7c3aed;text-align:center;">Thank you for letting us know you'll be joining!</p>
 		</div>
 	</main>
 	<footer class="container">
